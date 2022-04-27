@@ -29,5 +29,13 @@ Running prediction on Ec2 instance
 7. To deploy from S3, change `--testCsv` argument to `s3a://parth643assignment2/ValidationDataset.csv`
 8. To run Random Forrest Regression instead of Linear Regression, change `--classfier` argument to `rfc`
 
+Running using Docker
+1. Create Ec2 instance with `Amazon-Linux` AMI
+2. Upload `643assignment2` with all csv and py files
+3. `cd` into `643assignment2` directory
+4. Run `docker build -t 643assignment2 .` to build the image
+5. Run `docker images --filter reference=643assignment2` to test
+6. Run `docker run -it 643assignment2:latest --testCsv ValidationDataset.csv --classifier linear` or `docker run -it 643assignment2:latest --testCsv s3a://parth643assignment2/ValidationDataset.csv --classifier linear` for s3
+
 
 
