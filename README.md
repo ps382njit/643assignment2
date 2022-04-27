@@ -27,7 +27,7 @@ Running prediction on Ec2 instance
 6. To run locally on ec2 instance, in `/home/ec2-user` where both py and csv file should be- run:<br />
     `spark-submit --packages org.apache.hadoop:hadoop-aws:2.7.7 predict.py --testCsv ValidationDataset.csv --classifier linear`
 7. To deploy from S3, change `--testCsv` argument to `s3a://parth643assignment2/ValidationDataset.csv`
-8. To run Random Forrest Regression instead of Linear Regression, change `--classfier` argument to `rfc`
+8. To run Random Forrest Regression instead of Linear Regression, change `--classifier` argument to `rfc`
 
 Running using Docker
 1. Create Ec2 instance with `Amazon-Linux` AMI
