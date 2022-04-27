@@ -34,7 +34,7 @@ Running using Docker
 2. Upload `643assignment2` with all csv and py files
 3. `cd` into `643assignment2` directory
 4. Run `docker build -t 643assignment2 .` to build the image
-5. Run `docker images --filter reference=643assignment2` to test
+5. Run `docker images --filter reference=643assignment2` to verify image has been created
 6. Run `docker run -it 643assignment2:latest --testCsv ValidationDataset.csv --classifier linear` or `docker run -it 643assignment2:latest --testCsv s3a://parth643assignment2/ValidationDataset.csv --classifier linear` for s3
 
 
